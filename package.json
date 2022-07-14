@@ -1,0 +1,22 @@
+{
+  "name": "hardhat-project",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat coverage",
+    "re": "npx hardhat clean && npx hardhat compile && npm run bench",
+    "bench": "npx hardhat run scripts/bench.js --network localhost"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.9.9",
+    "solidity-coverage": "^0.7.21"
+  }
+}
